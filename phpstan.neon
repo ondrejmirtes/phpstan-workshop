@@ -1,0 +1,2 @@
+rules:
+	- PhpStanWorkshop\CompareDateTimeRule
