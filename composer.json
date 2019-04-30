@@ -1,0 +1,21 @@
+{
+    "name": "ondrej/phpstan-workshop",
+    "type": "project",
+    "require-dev": {
+        "phpstan/phpstan": "^0.11.5"
+    },
+    "authors": [
+        {
+            "name": "Ondrej Mirtes",
+            "email": "ondrej@mirtes.cz"
+        }
+    ],
+    "require": {
+        "php": "~7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpStanWorkshop\\": "src"
+        }
+    }
+}
