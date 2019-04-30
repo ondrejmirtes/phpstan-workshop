@@ -2,7 +2,12 @@
 
 namespace PhpStanWorkshop;
 
-class Test
+class Test extends MagicProperties
 {
+
+	public function getName(): string
+	{
+		return 'foo';
+	}
 
 }
