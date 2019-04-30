@@ -1,0 +1,5 @@
+services:
+	-
+		class: PhpStanWorkshop\TestMethodsClassReflectionExtension
+		tags:
+			- phpstan.broker.methodsClassReflectionExtension
