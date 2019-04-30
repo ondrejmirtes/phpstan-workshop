@@ -1,0 +1,5 @@
+services:
+	-
+		class: PhpStanWorkshop\ParameterBagDynamicReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicMethodReturnTypeExtension
