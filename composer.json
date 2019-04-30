@@ -2,7 +2,8 @@
     "name": "ondrej/phpstan-workshop",
     "type": "project",
     "require-dev": {
-        "phpstan/phpstan": "^0.11.5"
+        "phpstan/phpstan": "^0.11.5",
+        "phpunit/phpunit": "^8.1"
     },
     "authors": [
         {
@@ -17,5 +18,10 @@
         "psr-4": {
             "PhpStanWorkshop\\": "src"
         }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests"
+        ]
     }
 }
