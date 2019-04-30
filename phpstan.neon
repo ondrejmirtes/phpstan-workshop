@@ -1,0 +1,5 @@
+services:
+	-
+		class: PhpStanWorkshop\MagicPropertiesClassReflectionExtension
+		tags:
+			- phpstan.broker.propertiesClassReflectionExtension
