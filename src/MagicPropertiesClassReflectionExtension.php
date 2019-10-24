@@ -11,9 +11,8 @@ class MagicPropertiesClassReflectionExtension implements PropertiesClassReflecti
 
 	public function hasProperty(ClassReflection $classReflection, string $propertyName): bool
 	{
-		$methodName = 'get' . ucfirst($propertyName);
-
-		return $classReflection->hasNativeMethod($methodName);
+		$traits = $classReflection->getTraits();
+		return in_array(MagicAccessors::class, $traits, true) && $classReflection->hasNativeProperty($propertyName);
 	}
 
 	public function getProperty(ClassReflection $classReflection, string $propertyName): PropertyReflection
@@ -22,7 +21,7 @@ class MagicPropertiesClassReflectionExtension implements PropertiesClassReflecti
 
 		return new MagicPropertyReflection(
 			$classReflection,
-			$classReflection->getNativeMethod($methodName)->getVariants()[0]->getReturnType()
+			$classReflection->getNativeProperty($propertyName)->getType()
 		);
 	}
 

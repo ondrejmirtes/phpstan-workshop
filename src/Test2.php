@@ -9,6 +9,8 @@ class Test2
 	{
 		echo $test->name;
 		echo $test->email;
+
+		$test->name === 1;
 	}
 
 }

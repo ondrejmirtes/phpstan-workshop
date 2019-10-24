@@ -53,7 +53,7 @@ class MagicPropertyReflection implements PropertyReflection
 
 	public function isWritable(): bool
 	{
-		return false;
+		return true;
 	}
 
 }

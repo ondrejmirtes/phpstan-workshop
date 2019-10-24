@@ -10,4 +10,9 @@ class Test extends MagicProperties
 		return 'foo';
 	}
 
+	public function getEmail(): string
+	{
+		return 'foo';
+	}
+
 }
